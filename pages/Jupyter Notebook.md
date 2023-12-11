@@ -12,6 +12,7 @@
 	- 由于Jupyter中可以将输出结果嵌套在Notebook中，并且支持Markdown语句的操作，这样使得你可以在Jupyter中输入任何你需要展示的内容，并且这些内容都会以一种[[#blue]]^^有组织有层次^^的样子排列出来。
 - **00-Generate Crude Property Based on Configuration.ipynb**
 	- config [[配置表]]
+	  id:: 6576b390-9fbf-4294-b228-b1f18a2c12f3
 		- 版本名\rightarrow在outputdata中生成不同文件夹
 			- ![image.png](../assets/image_1702278774401_0.png)
 	- crude propert 原油属性
