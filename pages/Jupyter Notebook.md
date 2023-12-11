@@ -10,7 +10,7 @@
 - **Jupyter Notebook更利于汇报和教学**
 	- Jupyter在工作汇报和教学方面也是非常的优秀。由于Jupyter本身的模块化和内容的清晰化，使得其天生具有如PPT一般的展示工作成果的功能。
 	- 由于Jupyter中可以将输出结果嵌套在Notebook中，并且支持Markdown语句的操作，这样使得你可以在Jupyter中输入任何你需要展示的内容，并且这些内容都会以一种[[#blue]]^^有组织有层次^^的样子排列出来。
-- ## 01
+- ## 01-ADU Feed Sampling
 	- **00-Generate Crude Property Based on Configuration.ipynb**
 		- config [[配置表]]
 		  id:: 6576b390-9fbf-4294-b228-b1f18a2c12f3
@@ -50,5 +50,5 @@
 		- 2.比较删除前后分布变化
 		- config[[配置表]]
 			- mapping+描述
-- ## 04-VDU Feed Sampling
+- ## 04-VDU Operating Condition Sampling
 	- **00-VDU Feed Sampling.ipynb**
