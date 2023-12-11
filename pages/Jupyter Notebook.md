@@ -13,6 +13,7 @@
 - 00-Generate Crude Property Based on Configuration.ipynb
 	- config [[配置表]]
 		- 版本名\rightarrow在outputdata中生成不同文件夹
+			- ![image.png](../assets/image_1702278774401_0.png)
 	- crude propert 原油属性
 		- refinery 样本
 			- TBP curves
