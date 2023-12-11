@@ -11,9 +11,10 @@
 	- Jupyter在工作汇报和教学方面也是非常的优秀。由于Jupyter本身的模块化和内容的清晰化，使得其天生具有如PPT一般的展示工作成果的功能。
 	- 由于Jupyter中可以将输出结果嵌套在Notebook中，并且支持Markdown语句的操作，这样使得你可以在Jupyter中输入任何你需要展示的内容，并且这些内容都会以一种[[#blue]]^^有组织有层次^^的样子排列出来。
 - 00-Generate Crude Property Based on Configuration.ipynb
-	- config[[配置表]]
-	- crude propert
-	- TBP conversion
-	- cut point
+	- config [[配置表]]
+	- crude propert 原油属性
+	- TBP conversion 定温累计收率
+	- cut point 理想收率
+		-
 	- sampling target property
 -
