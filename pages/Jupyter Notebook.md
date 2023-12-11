@@ -33,5 +33,5 @@
 		- 样本数量
 - **01-Crude Sampling.ipynb**
 - **00-VDU Feed Sampling.ipynb**
-	- objective:
+	- objective:抽样方法提取常渣进料
 -
