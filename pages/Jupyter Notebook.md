@@ -16,9 +16,14 @@
 	- TBP conversion 定温累计收率
 		- 混合规则
 		- 基于收率\rightarrow基于温度
-		- 非线性采样\rightarrow
+		- 非线性采样\rightarrow线性采样
 	- cut point 理想收率
 		- 理想馏分，连续切割
 		- 估算现场切割点
 	- sampling target property
+		- Tag
+		- varlist
+		- Relaxcoef
+		- formula
+		-
 -
