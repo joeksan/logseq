@@ -37,5 +37,7 @@
 	  抽样方法提取常渣进料样本
 	  收率分布覆盖且吻合现场数据
 	- basic principles：
-	  每种原油有5~10个ADU重复样本——same/close
+	  每种原油有5~10个ADU重复样本——相同same/相似close
+	  VDU与ADU方法相似
+	  移除相似样本后，获得
 -
