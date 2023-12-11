@@ -44,7 +44,7 @@
 	  开发了一种基于加权欧氏距离来去除重复样本的方法
 	  所选属性包括31点TBP曲线点及API、流量等
 	- 1.删除相似常渣样本数据
-		- 改变fdistcriteria[]
+		- 改变fdistcriteria[distance criteria parameter]距离标准参数\rightarrow决定移除
 	- 2.比较删除前后分布变化
 	- config[[配置表]]
 		- mapping+描述
