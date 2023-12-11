@@ -14,7 +14,9 @@
 	- config [[配置表]]
 	- crude propert 原油属性
 	- TBP conversion 定温累计收率
-	- cut point 理想收率
 		-
+	- cut point 理想收率
+		- 理想馏分，连续切割
+		- 估算现场切割点
 	- sampling target property
 -
