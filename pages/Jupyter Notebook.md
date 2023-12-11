@@ -51,5 +51,6 @@
 		- config[[配置表]]
 			- mapping+描述
 - ## 04-VDU Operating Condition Sampling
-	- **00-SimplifiedModel-Operating Condition Sampling.ipynb**
-	-
+	- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
+	- 01-SimplifiedModel-Sample ModificationV02h5.ipynb
+	- 02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb
