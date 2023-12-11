@@ -59,6 +59,6 @@
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and VisualisationV020806abcd.ipynb**
-		- rigiorous
+		-
 -
 -
