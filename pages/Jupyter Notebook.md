@@ -13,6 +13,7 @@
 - 00-Generate Crude Property Based on Configuration.ipynb
 	- config [[配置表]]
 	- crude propert 原油属性
+		- refinery 样本：tag
 	- TBP conversion 定温累计收率
 		- 混合规则
 		- 基于收率\rightarrow基于温度
@@ -25,5 +26,5 @@
 		- varlist
 		- Relaxcoef
 		- formula
-		-
+		- 样本数量
 -
