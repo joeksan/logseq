@@ -35,7 +35,7 @@
 			- 样本数量
 - **01-Crude Sampling.ipynb**
 - ## 03-VDU Feed Sampling
-	- **00-VDU Feed Sampling.ipynb**
+	- **00-DataProcessing.ipynb**
 		- objective:
 		  抽样方法提取常渣进料样本
 		  收率分布覆盖且吻合现场数据
@@ -50,5 +50,5 @@
 		- 2.比较删除前后分布变化
 		- config[[配置表]]
 			- mapping+描述
-- ## 04
+- ## 04-VDU Feed Sampling
 	- **00-VDU Feed Sampling.ipynb**
