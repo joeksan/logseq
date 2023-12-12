@@ -53,6 +53,8 @@
 - ## 04-VDU Operating Condition Sampling
 	- ### distop
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
+			- 独立变量
+			- 范围
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
