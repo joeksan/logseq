@@ -1,2 +1,2 @@
-- {{query (renderer :tocgen2)}}
+- {{query (Jupyter Notebook)}}
   query-table:: false
