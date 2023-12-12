@@ -1,2 +1,2 @@
-- {{query (Jupyter Notebook)}}
+- {{query (toc)}}
   query-table:: false
