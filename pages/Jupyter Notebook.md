@@ -147,7 +147,9 @@
 			- 保存详细运行样本输入
 			  会在 D:\XXXX\05-OutputData\（config 表格中 value 值）\Data 目录下自动生成 “ADU/VDU-RegInput-SampleDB.csv”和 “ADU/VDU-RegInput-SampleDB.h5”文件
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
-		-
+		  对详细模拟结果进行样本清洗以及和现场数据分布做对比
+			- 对详细模拟结果进行样本清洗以及和现场数据分布做对比
+			-
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
 -
