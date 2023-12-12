@@ -1,2 +1,2 @@
-- 动态目录
+- {{renderer :toc_iwgmgt}}
   query-table:: false
