@@ -134,8 +134,9 @@
 						- cmaxchange：为进一步调整的步长。
 						- cminitoroutput、clbthreshold、cubthreshold 进一步调整的监控变量及范围。
 						- Cbbegin 如果填 1，继续运行时一步到最近的上限或者下限，也就是一步跳到范围边界，再在范围内根据步长调整； 如果为空值或者 0，则按照步长一步步调整
-				- Sequencing 表格：主要用于对 RegInput 的变量进行聚类相关的配置——减压样本考虑的变量包括进料量，压降，进料 API 性质，J2+J4 收率；
-				  🔍聚类数值最好填大一些，每一各 Group 最好不要超过 200 个 case（100左右，这样运行过程中可以节约时间
+				- Sequencing 表格：主要用于对 RegInput 的变量进行聚类相关的配置——减压样本考虑的变量包括进料量，压降，进料 API 性质，[[$red]]==J2+J4 收率==；
+				  🔍聚类数值最好填大一些，每一各 Group 最好不要超过 200 个 case（100个左右），这样运行过程中可以节约时间
+				- Sequencing 表格：主要用于对 RegInput 的变量进行聚类相关的配置       减压样本考虑的变量包括进料量，压降，进料 API 性质，J2+J4 收率；       聚类数值最好填大一些，每一各 Group 最好不要超过 200 个 case，这样运行过程中可以节约时间。
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
