@@ -64,7 +64,7 @@
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 			- 第二次调用[[GAMS]]模型
 				- 线性系数coef由运行结果回归分析得到
-				  标准差stddev，用来做scaling，
+				  标准差stddev，用来做scaling，notebook模块计算
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
