@@ -87,6 +87,7 @@
 			- distop采样结果可视化，检查分布
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
+			- RegIndepVar 表格：由于详细模拟的输入会比 Distop 的要多，而且有些独立变量需要再次进行拉丁超立方采样，这个表格中配置的就是需要做拉丁超立方采样的变量，与  IndepVar 表格类似。  15  如减压样本输入变量：封油量，炉管注汽量，提馏段分率等，解释一下这里设置“减顶循流量/AR”的意义，为了详细样本运行至第 4 步改为控制减顶循流量，这样会根据与常渣量的关联得到减顶循量。
 			- RegInput 表格：表格内容比较多，可以理解为三部分。 第一部分：A 列至 F 列，为变量对应设置，既对应详细模拟样本运行平台发送文件，同时部分对应 Petro-Sim 详细模型中的 Input； 第二部分：G 列至 P 列，由 Distop 的输出变量和 RegIndepVar 采样变量计算得到详细模拟的输入，它和 DistopInput 表格类似，不同之处是增加了三列内容。
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
