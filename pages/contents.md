@@ -1,1 +1,1 @@
-- {{query (contents)}}
+- {{query ({{renderer :tocgen2}})}}
