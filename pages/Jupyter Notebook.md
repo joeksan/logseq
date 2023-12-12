@@ -53,8 +53,10 @@
 - ## 04-VDU Operating Condition Sampling
 	- ### distop
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
-			- 独立变量
-			- 范围
+			- [[独立变量]]
+			- 变化范围
+			- 第一次调用[[GAMS]]
+				-
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
