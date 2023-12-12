@@ -139,7 +139,11 @@
 				- Sequencing 表格：主要用于对 RegInput 的变量进行聚类相关的配置——减压样本考虑的变量包括进料量，压降，进料 API 性质，[[$red]]==J2+J4 收率==；
 				  🔍聚类数值最好填大一些，每一各 Group 最好不要超过 200 个 case（100个左右），这样运行过程中可以节约时间
 				- RegOutput 表格：此表格和详细模拟中的 Ouputs3 对应，不过配置了变量的上下限，现场 Tag 配置等，上下限用于清洗数据使用,现场位号主要是为了和现场数据分布做对比
-			- Read the distop sampling results and clean the data   读取 Distop 清洗后的样本数据 VDU-RegCleanRes-SampleDB，虽然前面已经做了清洗记录，但是为了防止有问题，还会根据配置表中的“DistopOutput”上下限再次进行数据清洗 2）  Latin Hypercube Sampling  根据 RegIndepVar 设置，拉丁超立方生成样本数据，且结合 Distop Output 样本数据生成严格模拟的输入数据 RegInput。 3）The distirubtion of Samples compared with the site data  与现场数据作对比 4）Cluster and Sequence the Sample  对样本聚类并进行可视化分析 5）Save the Sample result    保存详细运行样本输入 会在 D:\XXXX\05-OutputData\（config 表格中 value 值）\Data 目录下自动生成 “ADU/VDU-RegInput-SampleDB.csv”和 “ADU/VDU-RegInput-SampleDB.h5”文件
+			- 读取 Distop 清洗后的样本数据 VDU-RegCleanRes-SampleDB
+			  🔍虽然前面已经做了清洗记录，但是为了防止有问题，还会根据配置表中的“DistopOutput”上下限再次进行数据清洗
+			- 根据 RegIndepVar 设置，拉丁超立方生成样本数据，且结合 Distop Output 样本数据生成严格模拟的输入数据 RegInput。
+			- 与现场数据作对比
+			- 对样本聚类并进行可视化分析 5）Save the Sample result    保存详细运行样本输入 会在 D:\XXXX\05-OutputData\（config 表格中 value 值）\Data 目录下自动生成 “ADU/VDU-RegInput-SampleDB.csv”和 “ADU/VDU-RegInput-SampleDB.h5”文件
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
