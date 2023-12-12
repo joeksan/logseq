@@ -53,8 +53,8 @@
 - ## 04-VDU Operating Condition Sampling
 	- ### distop
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
-			- 对[[独立变量]]进行
-			- 变化范围
+			- 对[[独立变量]]进行LHS采样
+				- 配置上下限——变化范围
 			- 第一次调用[[GAMS]]
 				- 针对由[[独立变量]]计算得到的[[中间变量]]
 				- 约束条件——[[中间变量]]的变化范围
