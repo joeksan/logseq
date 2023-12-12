@@ -87,7 +87,7 @@
 			- distop采样结果可视化，检查分布
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
-			-
+			- RegInput 表格：表格内容比较多，可以理解为三部分。 第一部分：A 列至 F 列，为变量对应设置，既对应详细模拟样本运行平台发送文件，同时部分对应 Petro-Sim 详细模型中的 Input； 第二部分：G 列至 P 列，由 Distop 的输出变量和 RegIndepVar 采样变量计算得到详细模拟的输入，它和 DistopInput 表格类似，不同之处是增加了三列内容。
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
