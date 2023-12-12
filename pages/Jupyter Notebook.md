@@ -14,7 +14,7 @@
 	- Jupyter在工作汇报和教学方面也是非常的优秀。由于Jupyter本身的模块化和内容的清晰化，使得其天生具有如PPT一般的展示工作成果的功能。
 	- 由于Jupyter中可以将输出结果嵌套在Notebook中，并且支持Markdown语句的操作，这样使得你可以在Jupyter中输入任何你需要展示的内容，并且这些内容都会以一种[[#blue]]^^有组织有层次^^的样子排列出来。
 - ## 01-ADU Feed Sampling
-	- **01-Crude Sampling.ipynb**
+  collapsed:: true
 	- **00-Generate Crude Property Based on Configuration.ipynb**
 		- config [[配置表]]
 		  id:: 6576b390-9fbf-4294-b228-b1f18a2c12f3
@@ -37,6 +37,7 @@
 			- Relaxcoef
 			- formula
 			- 样本数量
+	- **01-Crude Sampling.ipynb**
 - ## 03-VDU Feed Sampling
   collapsed:: true
 	- **00-DataProcessing.ipynb**
@@ -56,6 +57,7 @@
 			- mapping+描述
 - ## 04-VDU Operating Condition Sampling
 	- ### distop
+	  collapsed:: true
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
 			- 对[[独立变量]]进行LHS采样
 				- 配置上下限——变化范围
@@ -98,7 +100,7 @@
 					- 第一部分：A 列至 F 列，为变量对应设置，既对应详细模拟样本运行平台发送文件，同时部分对应 Petro-Sim 详细模型中的 Input
 					- 第二部分：G 列至 P 列，由 Distop 的输出变量和 RegIndepVar 采样变量计算得到详细模拟的输入，它和 DistopInput 表格类似，不同之处是增加了三列内容
 						- a)  Weight 列 和 S0 列：这个用于计算生成的详细模拟的输入和基础模拟文件的输入的距离（距离越近，表示样本和基础模拟越接近），其中 S0 列存放的是基础模拟文件中的具体数据，weight 列是计算距离时候这个变量的权重，权重越大，表示这个变量在计算距离的时候越重要
-						  🔍
+						  🔍[[标准化]]
 						- b)  FixedInBase 列配置的是为了优化聚类后样本的计算步数使用，如果样本平台分步策略为基于第一步保存结果来跑下一个模型的，fixedinbase 里面的参数为第二步及以后变量的起始值，第一步变量不用设置，例如减压采样第二步的调整策略为减顶循返塔温度与减顶温度，这里就设置这两个变量的模型基础固定值为 16 和 50，中段负荷和减压塔底注气量在第三步调整，减顶循流量在第四步调整，均设置了起始值
 					- 第三部分：Q 列至 AE 列，这几列在这里没有起作用，是详细模拟分步跑样本平台上的设置，这部分与详细模拟平台发送文件保持一致
 						- Sequence 列用于标识分步跑样本的计算次序，单个样本模拟分几个大步骤来完成
