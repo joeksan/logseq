@@ -109,7 +109,8 @@
 							- 2）详细模拟输入排在前面的变量是 active（0/1）项，也就是激活与否， 一般情况下 sequence 分步计算的 active 项需要同步设置，否则当基础模型塔 monitor 中 active 变量与配置表不一样时，如果只配置控制变量（设置 1），底层塔自由度有问题，塔不计算，建议不控制的变量也要配置进去，不然控制策略调整时，需要每次都更新模型和数据库
 							- 3）减压样本生成，样本运行前三步需要设置控制减顶温度，这个是在模型中设置的，为了降低减一线抽出温度，第 4 步改为控制减顶循流量，所有的 active 项全部配置为 4
 							- 4）减压样本生成如果采用输入常渣 Composition 的方法，则原油比例的步骤需要设置为-1，常渣组成需要设置为 0，才能与跑样本平台采用脚本方式自动化相对应，否则会出错
-							- 🔍济南测试时采用1步设置
+							- 🔍济南采样测试时采用1步设置
+						- maxchange 列最大单次调整步长（但是如果 onestepcondition 条件满足的话，就会一步调整到目标值），此设置要结合收敛率以及运行时间来确定。步数太小，收敛率高，但是运行时间会多。减压采样经过多次测试，设置见配置表。 (常压采样时，推荐采用较小步长，避免过大调整幅度引起的常顶回流量波动造成的不收敛，常压小步长带来的问题：1.采样平台 petrosim 不关闭的前提下，每调整一次，内存增加 15-16MB，最终的步数达到 84 步，内存占用率到 100%，目前采样平台底层每 40 步，保存关闭一次 petrosim文件，再重新启动计算；2.小步长会导致样本调整的步数较多，采样时间过长，需要配合 03-7.2  Use  Google  OR-Tools  to  solve  a  TSP  likely problem:  Minimising  the  total  simulation  steps  by  choosing  simulation pathway，减小每批样本的调整步数，节省采样时间。)
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
