@@ -119,7 +119,8 @@
 						- rollback 表示如果出现不收敛，是否要采用 robllback 的方式，“1”表示采用，也就是会返回到上一步收敛的结果，并且这个参数在下一步将不会再调整，“0”表示不采用
 						- minitoroutput:表示需要监测模拟文件中的结果，减压采样对应 Output3表格中的单元格，对于常压采样，由于存在两个输出 spreadsheet，需要增加 Outputs1 和 Outputs2，例如 [[$red]]==Outputs1-C325==。 如果当前模拟值低于了 lbthreshod 值，或者是高于了 ubthreshod，下一步则停止对这个参数的调整。 
 						  🔍minitoroutput 的优先级要高于 onestepcondition
-						- lbthreshod、ubthreshod    分别为最小阈值、最大阈值，和 monitorouput一起来做调整
+						- lbthreshod、ubthreshod 分别为最小阈值、最大阈值，和 monitorouput一起来做调整
+						-
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
