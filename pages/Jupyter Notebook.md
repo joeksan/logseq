@@ -63,7 +63,7 @@
 			- 生成第一次distop样本运行input，存成h5文件（或csv文件）
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 			- 首先改造普通样本
-				-
+				- 读取超过约束条件上下限的样本
 				- 针对减压中段热量没取完的样本，适当调整中段负荷
 				  🔍percent max removal达到100
 				- 减顶循负荷比较小的情况，需要减少其他几个中段取热
