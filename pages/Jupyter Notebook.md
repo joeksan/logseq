@@ -84,7 +84,7 @@
 				  🔍由于第一次modification影响了带入塔内的总热量，会出现部分样本中段热量没取完的现象，需要再次干预这部分样本
 				- 数据清洗基于input与output的约束范围
 				  🔍额外增加了对中段总取热负荷的约束，相关变量在output2中配置，这部分变量只能使用distopoutput的输出变量由公式计算得到
-			-
+			- distop采样结果可视化，检查分布
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
