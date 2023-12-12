@@ -154,7 +154,7 @@
 			- 根据 RegOutput 信息生成 RegOutput2 与 ConditionalOutput，进行样本清洗
 			- 根据 RegResClean 配置关系进行清洗
 			- 与现场数据进行可视化分析
-			-
+			- 保存清洗后的详细样本结果 会在 D:\XXXX\05-OutputData\（config 表格中 value 值）\Data 目录下自动生成 “A/VDU-RegCleanRes-SampleDB.h5”
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
 -
