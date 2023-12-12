@@ -79,7 +79,7 @@
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 			- 读取Distop样本并进行数据清洗
 				- 合并两次distop运行结果
-				-
+				- 第二次结果改造
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
