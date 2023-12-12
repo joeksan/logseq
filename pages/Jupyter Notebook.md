@@ -166,5 +166,5 @@
 			- 保存清洗后的详细样本结果 会在 D:\XXXX\05-OutputData\（config 表格中 value 值）\Data 目录下自动生成 “A/VDU-RegCleanRes-SampleDB.h5”
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		  对详细模拟结果进行样本清洗以及和现场数据分布做对比
-			-
+			- 检 索 所 有 的 版 本 信 息 ， 这 里 默 认 检 索 对 应 版 本 目 录 下 的 ADU 、VDU-RegCleanRes-SampleDB*.h5 文件
 -
