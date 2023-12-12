@@ -75,7 +75,7 @@
 				- 主要针对减压塔进料温度约束之外的样本进行改造
 				- 线性系数coef由运行结果回归分析得到，首次输入可以参考齐鲁配置
 				  🔍标准差stddev可以不用指定，用来做scaling，由notebook模块计算
-			- 第二次投入
+			- 第二次投入样本运行平台的样本为01改造的样本集
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
