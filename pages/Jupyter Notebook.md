@@ -128,7 +128,11 @@
 						  调整方向“-”：用于调整当前值> CLB 的样本，首先判断如果当前值>CUB，会通过 Cbbegin 的设置来判断是否一步到位至 CUB，如果设置为“1”，则先一步到位调整到 CUB，再根据 cmaxchange 步长调整至 CLB；如果设置为“0”，则不一步到位，只根据 cmaxchange 步长调整至 CLB；  
 						  
 						  调整方向“C”：同理，如果当前值比上下限中间值小，根据 Cbbegin 与cmaxchange 的设置向上调整至 CUB；如果当前值比上下限中间值大，则向下调整至 CLB。
-					- CLB,CUB：进一步调整的目标范围。 k)  cmaxchange：为进一步调整的步长。 l)  cminitoroutput、clbthreshold、cubthreshold 进一步调整的监控变量及范围。 m)  Cbbegin 如果填 1，继续运行时一步到最近的上限或者下限，也就是一步跳到范围边界，再在范围内根据步长调整； 如果为空值或者 0，则按照步长一步步调整
+						- CLB,CUB：进一步调整的目标范围。
+						- cmaxchange：为进一步调整的步长。
+						- cminitoroutput、clbthreshold、cubthreshold 进一步调整的监控变量及范围。
+						- Cbbegin 如果填 1，继续运行时一步到最近的上限或者下限，也就是一步跳到范围边界，再在范围内根据步长调整； 如果为空值或者 0，则按照步长一步步调整
+						-
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
