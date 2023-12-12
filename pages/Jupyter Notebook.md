@@ -81,7 +81,8 @@
 				- 合并两次distop运行结果
 				- 第二次结果改造
 				  🔍配置中段和侧线产品及减顶温度等相关信息，减少极化现象，将约束范围以外的部分拉回至正常范围内
-				  🔍由于第一次modification影响了带入塔内的总热量，会出现部分样本中段热量没取完的现象
+				  🔍由于第一次modification影响了带入塔内的总热量，会出现部分样本中段热量没取完的现象，需要再次干预这部分样本
+			-
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
