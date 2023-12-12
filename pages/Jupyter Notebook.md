@@ -82,7 +82,8 @@
 				- 第二次结果改造
 				  🔍配置中段和侧线产品及减顶温度等相关信息，减少极化现象，将约束范围以外的部分拉回至正常范围内
 				  🔍由于第一次modification影响了带入塔内的总热量，会出现部分样本中段热量没取完的现象，需要再次干预这部分样本
-				- 数据清洗基于input与output的约束范围，额外增加了对取热负荷的约束
+				- 数据清洗基于input与output的约束范围
+				  额外增加了对取热负荷的约束
 			-
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
