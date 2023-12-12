@@ -122,7 +122,8 @@
 						- lbthreshod、ubthreshod 分别为最小阈值、最大阈值，和 monitorouput一起来做调整
 						- 如果当样本达到目标值后，想进一步运行，则可以在 X 列至 AE 列设置调整参数。主要是为了克服某些参数未在合理范围内，或者某些参数在某些范围内比较稀疏的问题
 						- CRUN 为当样本达到目标值后，进一步调整的方向。 
-						  调整方向“+”：用于调整当前值<  CUB 的样本，首先判断如果当前值< CLB，会通过 Cbbegin 的设置来判断是否一步到位至 CLB，如果设置为“1”，则先一步到位调整到 CLB，再根据 cmaxchange 步长调整至 CUB；如果设置为“0”，则不一步到位，只根据 cmaxchange 步长调整至 CUB；  调整方向“-”：用于调整当前值> CLB 的样本，首先判断如果当前值>CUB，
+						  调整方向“+”：用于调整当前值<  CUB 的样本，首先判断如果当前值< CLB，会通过 Cbbegin 的设置来判断是否一步到位至 CLB，如果设置为“1”，则先一步到位调整到 CLB，再根据 cmaxchange 步长调整至 CUB；如果设置为“0”，则不一步到位，只根据 cmaxchange 步长调整至 CUB；  
+						  调整方向“-”：用于调整当前值> CLB 的样本，首先判断如果当前值>CUB，会通过 Cbbegin 的设置来判断是否一步到位至 CUB，如果设置为“1”，则先一步到位调整到 CUB，再根据 cmaxchange 步长调整至 CLB；如果设置为“0”，则不一步到位，只根据 cmaxchange 步长调整至 CLB；  调整方向“C”：同理，如果当前值比上下限中间值小，根据 Cbbegin 与cmaxchange 的设置向上调整至 CUB；如果当前值比上下限中间值大，则向下调整至 CLB。
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
