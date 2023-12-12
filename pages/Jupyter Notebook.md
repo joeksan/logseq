@@ -80,7 +80,7 @@
 			- 读取Distop样本并进行数据清洗
 				- 合并两次distop运行结果
 				- 第二次结果改造
-				  🔍配置中段和侧线产品的相关信息，减少极化现象，
+				  🔍配置中段和侧线产品及减顶温度等相关信息，减少极化现象，将约束范围以外的匀给
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
