@@ -60,7 +60,8 @@
 				- 约束条件——[[中间变量]]的变化范围
 				  用来最小化样本误差
 				- 有且只有一个方程可以不用完全满足，在relax列配置为1
-			- 生成第一次distop样本运行input，存为h5文件
+			- 生成第一次distop样本运行input，存成h5文件
+			  或
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
