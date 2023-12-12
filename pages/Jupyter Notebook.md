@@ -113,7 +113,8 @@
 						- maxchange 列表示最大单次调整步长（但是如果 onestepcondition 条件满足的话，就会一步调整到目标值），此设置要结合收敛率以及运行时间来确定。步数太小，收敛率高，但是运行时间会长。减压采样经过多次测试，设置见[[配置表]]。
 						  🔍常压采样时，推荐采用较小步长，避免过大调整幅度引起的常顶回流量波动造成的不收敛，常压小步长带来的问题：
 						  1.采样平台 Petro-Sim 不关闭的前提下，每调整一次，内存增加 15-16MB，最终的步数达到 84 步，内存占用率到 100%，目前采样平台底层每 40 步，保存关闭一次 Petro-Sim文件，再重新启动计算
-						  2.小步长会导致样本调整的步数较多，采样时间过长，需要配合 03-7.2  Use  Google  OR-Tools  to  solve  a  TSP  likely problem:  Minimising  the  total  simulation  steps  by  choosing  simulation pathway，减小每批样本的调整步数，节省采样时间。)
+						  2.小步长会导致样本调整的步数较多，采样时间过长，需要配合 03-7.2  Use  Google  OR-Tools  to  solve  a  TSP  likely problem:  Minimising  the  total  simulation  steps  by  choosing  simulation pathway，减小每批样本的调整步数，节省采样时间。
+						- onestepcondition  级别要优先于 maxchange，“+”表示如果从当前值到目标值是增加的话，就一步调整到位，而不是采用分步调整，如果是“-”，表示如果从当前值到目标值是降低的话，就一步调整到位。一般是选取设置易于收敛的方向。如侧线流量如果降低，则设置一步到位，进塔温度提高则设置一步到位。
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
