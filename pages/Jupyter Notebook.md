@@ -58,17 +58,17 @@
 			- 第一次调用[[GAMS]]模型
 				- 针对由[[独立变量]]计算得到的[[中间变量]]
 				- 约束条件——[[中间变量]]的变化范围
-				  用来最小化样本误差
+				  🔍用来最小化样本误差
 				- 有且只有一个方程可以不用完全满足，在relax列配置为1
 			- 生成第一次distop样本运行input，存成h5文件（或csv文件）
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 			- 首先改造普通样本
 				- 针对减压中段负荷没取完的样本，适当调整中段负荷
-				  percent max removal达到100
+				  🔍percent max removal达到100
 			- 第二次调用[[GAMS]]模型
 				- 主要针对减压塔进料温度约束之外的样本进行改造
 				- 线性系数coef由运行结果回归分析得到，首次输入可以参考齐鲁配置
-				  标准差stddev可以不用指定，用来做scaling，由notebook模块计算
+				  🔍标准差stddev可以不用指定，用来做scaling，由notebook模块计算
 				- 第二次投入
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
