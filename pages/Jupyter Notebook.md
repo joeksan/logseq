@@ -54,6 +54,7 @@
 	- ### Distop
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
 		  collapsed:: true
+		  打开Distop 自动采样和样本改造文件
 			- 对[[独立变量]]进行LHS采样
 			  collapsed:: true
 				- 配置上下限——变化范围
@@ -67,6 +68,7 @@
 			- 生成第一次distop样本运行input数据，存成h5文件（或csv文件）
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 		  collapsed:: true
+		  对 Distop 样本结果进行改造和可视化
 			- 首先改造普通样本
 			  collapsed:: true
 				- 读取超过约束条件上下限的样本
@@ -84,7 +86,7 @@
 			- 第二次投入样本运行平台的样本为01改造过的样本集，input数据存成h5文件
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 		  collapsed:: true
-		  对 Distop 样本结果进行改造和可视化
+		  对 Distop 两次产生的结果合并清洗并做可视化分析
 			- 读取Distop样本并进行数据清洗
 			  collapsed:: true
 				- 合并两次distop运行结果
