@@ -152,6 +152,9 @@
 			- 统计详细模拟样本情况，可以看出样本的收敛情况，最后一步的样本数、达到目标值的样本数、继续运行的样本数，以及它们在收敛样本中的占比、在总投入样本中的占比，还会看到样本的步数统计。这些都帮助更好的了解这批样本结果，并对设置有一定的理解
 			- 根据配置信息中的“RegInput”“RegOutput”的上下限进行样本清洗
 			- 根据 RegOutput 信息生成 RegOutput2 与 ConditionalOutput，进行样本清洗
+			- 根据 RegResClean 配置关系进行清洗
+			- 与现场数据进行可视化分析
+			-
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
 -
