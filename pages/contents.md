@@ -1,2 +1,2 @@
-- {{query (toc)}}
+- {{query (Contents)}}
   query-table:: false
