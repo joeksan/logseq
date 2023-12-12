@@ -62,8 +62,9 @@
 				- 有且只有一个方程可以不用完全满足，在relax列配置为1
 			- 生成第一次distop样本运行input，存成h5文件（或csv文件）
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
-			- 第一次调用[[GAMS]]模型
-			- 线性系数和标准差，用来做scaling
+			- 第二次调用[[GAMS]]模型
+				- 线性系数由
+				  标准差，用来做scaling
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
