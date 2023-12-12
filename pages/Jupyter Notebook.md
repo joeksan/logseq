@@ -149,5 +149,5 @@
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
-- /to'c
+- {{renderer :toc_pxisniow}}
 - {{renderer :tocgen2}}
