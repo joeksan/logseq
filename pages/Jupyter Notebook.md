@@ -53,15 +53,14 @@
 - ## 04-VDU Operating Condition Sampling
 	- ### distop
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
-			- [[独立变量]]
+			- 对[[独立变量]]进行
 			- 变化范围
 			- 第一次调用[[GAMS]]
 				- 针对由[[独立变量]]计算得到的[[中间变量]]
 				- 约束条件——[[中间变量]]的变化范围
 				  用来最小化样本误差
 				- 有且只有一个方程可以不用完全满足，在relax列配置为1
-			- 生成第一次distop样本运行input，存成h5文件
-			  或
+			- 生成第一次distop样本运行input，存成h5文件（或csv文件）
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
