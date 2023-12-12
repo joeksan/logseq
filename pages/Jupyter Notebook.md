@@ -120,7 +120,9 @@
 						- minitoroutput:表示需要监测模拟文件中的结果，减压采样对应 Output3表格中的单元格，对于常压采样，由于存在两个输出 spreadsheet，需要增加 Outputs1 和 Outputs2，例如 [[$red]]==Outputs1-C325==。 如果当前模拟值低于了 lbthreshod 值，或者是高于了 ubthreshod，下一步则停止对这个参数的调整。 
 						  🔍minitoroutput 的优先级要高于 onestepcondition
 						- lbthreshod、ubthreshod 分别为最小阈值、最大阈值，和 monitorouput一起来做调整
-						-
+						- 如果当样本达到目标值后，想进一步运行，则可以在 X 列至 AE 列设置调整参数。主要是为了克服某些参数未在合理范围内，或者某些参数在某些范围内比较稀疏的问题
+						- CRUN 为当样本达到目标值后，进一步调整的方向。 
+						  调整方向“+”：用于调整当前值<  CUB 的样本，首先判断如果当前值< CLB，会通过 Cbbegin 的设置来判断是否一步到位至 CLB，如果设置为“1”，则先一步到位调整到 CLB，再根据 cmaxchange 步长调整至 CUB；如果设置为“0”，则不一步到位，只根据 cmaxchange 步长调整至 CUB；  调整方向“-”：用于调整当前值> CLB 的样本，首先判断如果当前值>CUB，
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
