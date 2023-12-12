@@ -77,7 +77,8 @@
 				  🔍标准差stddev可以不用指定，用来做scaling，由notebook模块计算
 			- 第二次投入样本运行平台的样本为01改造过的样本集，input数据存成h5文件
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
-			-
+			- 读取Distop样本并进行数据清洗
+				- 合并两次
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
