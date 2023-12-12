@@ -64,7 +64,7 @@
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 			- 首先改造普通样本
 				- 针对减压中段负荷没取完的样本，适当调整中段负荷
-				  heatremove
+				  percent max removal达到100
 			- 第二次调用[[GAMS]]模型
 				- 主要针对减压塔进料温度约束之外的样本进行改造
 				- 线性系数coef由运行结果回归分析得到，首次输入可以参考齐鲁配置
