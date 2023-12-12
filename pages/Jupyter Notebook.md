@@ -56,7 +56,7 @@
 			- [[独立变量]]
 			- 变化范围
 			- 第一次调用[[GAMS]]
-				-
+				- 针对由独立变量关联变量
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
