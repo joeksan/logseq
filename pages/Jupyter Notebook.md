@@ -91,7 +91,7 @@
 				- 数据清洗基于input与output的约束范围
 				  🔍额外增加了对中段总取热负荷的约束，相关变量在output2中配置，这部分变量只能使用distopoutput的输出变量由公式计算得到；如果想增加一些中间变量可视化，也可以加到这里
 			- distop采样结果可视化，检查分布
-	- ### rigorous
+	- ### Rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
 		  对详细模拟采样并且生成输入数据，以及数据清洗和可视化
 			- config[[配置表]]
@@ -151,3 +151,4 @@
 		-
 -
 - {{renderer :tocgen2}}
+  id:: 6576d9d2-86b8-40c7-835f-cd9ed0b30d22
