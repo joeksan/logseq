@@ -56,7 +56,7 @@
 		- config[[配置表]]
 			- mapping+描述
 - ## 04-VDU Operating Condition Sampling
-	- ### distop
+	- ### Distop
 	  collapsed:: true
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
 			- 对[[独立变量]]进行LHS采样
@@ -143,7 +143,9 @@
 			  🔍虽然前面已经做了清洗记录，但是为了防止有问题，还会根据配置表中的“DistopOutput”上下限再次进行数据清洗
 			- 根据 RegIndepVar 设置，拉丁超立方生成样本数据，且结合 Distop Output 样本数据生成严格模拟的输入数据 RegInput。
 			- 与现场数据作对比
-			- 对样本聚类并进行可视化分析 5）Save the Sample result    保存详细运行样本输入 会在 D:\XXXX\05-OutputData\（config 表格中 value 值）\Data 目录下自动生成 “ADU/VDU-RegInput-SampleDB.csv”和 “ADU/VDU-RegInput-SampleDB.h5”文件
+			- 对样本聚类并进行可视化分析
+			- 保存详细运行样本输入
+			  会在 D:\XXXX\05-OutputData\（config 表格中 value 值）\Data 目录下自动生成 “ADU/VDU-RegInput-SampleDB.csv”和 “ADU/VDU-RegInput-SampleDB.h5”文件
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
