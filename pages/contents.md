@@ -1,2 +1,2 @@
-- {{renderer :toc_iwgmgt}}
+- {{renderer :tocgen,*}}
   query-table:: false
