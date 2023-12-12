@@ -63,8 +63,8 @@
 			- 生成第一次distop样本运行input，存成h5文件（或csv文件）
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 			- 第二次调用[[GAMS]]模型
-				- 线性系数coef由运行结果回归分析得到
-				  标准差stddev，用来做scaling，notebook模块计算
+				- 线性系数coef由运行结果回归分析得到，首次输入可以参考齐鲁配置
+				  标准差stddev可以不用指定，用来做scaling，notebook模块计算
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
