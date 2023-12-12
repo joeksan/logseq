@@ -1,2 +1,2 @@
-- {{query (Contents)}}
+- 动态目录
   query-table:: false
