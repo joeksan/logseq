@@ -57,7 +57,8 @@
 			- 变化范围
 			- 第一次调用[[GAMS]]
 				- 针对由[[独立变量]]计算得到的[[关联变量]]
-				- 约束
+				- 约束条件——变化范围
+				  用来最小化样本误差
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
