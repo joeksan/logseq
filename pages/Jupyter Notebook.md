@@ -53,9 +53,12 @@
 - ## 04-VDU Operating Condition Sampling
 	- ### Distop
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
+		  collapsed:: true
 			- 对[[独立变量]]进行LHS采样
+			  collapsed:: true
 				- 配置上下限——变化范围
 			- 第一次调用[[GAMS]]模型
+			  collapsed:: true
 				- 读取超过约束条件上下限的样本
 				- 针对由[[独立变量]]计算得到的[[中间变量]]
 				- 约束条件——[[中间变量]]的变化范围
@@ -63,7 +66,9 @@
 				- 有且只有一个方程可以不用完全满足，在relax列配置为1
 			- 生成第一次distop样本运行input数据，存成h5文件（或csv文件）
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
+		  collapsed:: true
 			- 首先改造普通样本
+			  collapsed:: true
 				- 读取超过约束条件上下限的样本
 				- 主要针对减压中段热量没取完的样本，适当调整中段负荷
 				  🔍样本percent max removal达到100，先用output计算结果对input取热负荷赋值，然后将中段负荷100%降为99%
@@ -71,13 +76,17 @@
 				  🔍减一流量过低，在详细模拟阶段不易收敛
 				- 减顶循负荷比较小的情况，需要减少其他几个中段取热
 			- 第二次调用[[GAMS]]模型
+			  collapsed:: true
 				- 读取超过约束条件上下限的样本
 				- 主要针对减压塔进料温度约束之外的样本进行改造
 				- 线性系数coef由运行结果回归分析得到，首次输入可以参考齐鲁配置
 				  🔍标准差stddev可以不用指定，用来做scaling，由notebook模块计算
 			- 第二次投入样本运行平台的样本为01改造过的样本集，input数据存成h5文件
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
+		  collapsed:: true
+		  对 Distop 样本结果进行改造和可视化
 			- 读取Distop样本并进行数据清洗
+			  collapsed:: true
 				- 合并两次distop运行结果
 				- 第二次结果改造
 				  🔍配置中段和侧线产品及减顶温度等相关信息，减少极化现象，将约束范围以外的部分拉回至正常范围内
@@ -87,18 +96,24 @@
 			- distop采样结果可视化，检查分布
 	- ### Rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
+		  collapsed:: true
 		  对详细模拟采样并且生成输入数据，以及数据清洗和可视化
 			- config[[配置表]]
+			  collapsed:: true
 				- RegIndepVar 表格：由于详细模拟的输入会比 Distop 的要多，而且有些独立变量需要再次进行拉丁超立方采样，这个表格中配置的就是需要做拉丁超立方采样的变量，与 IndepVar 表格类似。如减压样本输入变量：封油量，炉管注汽量，提馏段分率等
 				  🔍解释一下这里设置“减顶循流量/AR”的意义，为了详细样本运行至第 4 步改为控制减顶循流量，这样会根据与常渣量的关联得到减顶循量
 				- RegInput 表格：表格内容比较多，可以理解为三部分
+				  collapsed:: true
 					- 第一部分：A 列至 F 列，为变量对应设置，既对应详细模拟样本运行平台发送文件，同时部分对应 Petro-Sim 详细模型中的 Input
 					- 第二部分：G 列至 P 列，由 Distop 的输出变量和 RegIndepVar 采样变量计算得到详细模拟的输入，它和 DistopInput 表格类似，不同之处是增加了三列内容
+					  collapsed:: true
 						- a)  Weight 列 和 S0 列：这个用于计算生成的详细模拟的输入和基础模拟文件的输入的距离（距离越近，表示样本和基础模拟越接近），其中 S0 列存放的是基础模拟文件中的具体数据，weight 列是计算距离时候这个变量的权重，权重越大，表示这个变量在计算距离的时候越重要
 						  🔍[[标准化]]
 						- b)  FixedInBase 列配置的是为了优化聚类后样本的计算步数使用，如果样本平台分步策略为基于第一步保存结果来跑下一个模型的，fixedinbase 里面的参数为第二步及以后变量的起始值，第一步变量不用设置，例如减压采样第二步的调整策略为减顶循返塔温度与减顶温度，这里就设置这两个变量的模型基础固定值为 16 和 50，中段负荷和减压塔底注气量在第三步调整，减顶循流量在第四步调整，均设置了起始值
 					- 第三部分：Q 列至 AE 列，这几列在这里没有起作用，是详细模拟分步跑样本平台上的设置，这部分与详细模拟平台发送文件保持一致
+					  collapsed:: true
 						- Sequence 列用于标识分步跑样本的计算次序，单个样本模拟分几个大步骤来完成
+						  collapsed:: true
 							- 注意： 
 							  1）sequence 必须是连续的，不能中间缺少某个步骤，比如从 1 跳到了 3，缺少 2，这个是不容许的，否则会有问题
 							- 2）详细模拟输入排在前面的变量是 active（0/1）项，也就是激活与否， 一般情况下 sequence 分步计算的 active 项需要同步设置，否则当基础模型塔 monitor 中 active 变量与配置表不一样时，如果只配置控制变量（设置 1），底层塔自由度有问题，塔不计算，建议不控制的变量也要配置进去，不然控制策略调整时，需要每次都更新模型和数据库
@@ -138,6 +153,7 @@
 			- 保存详细运行样本输入
 			  会在 D:\XXXX\05-OutputData\（config 表格中 value 值）\Data 目录下自动生成 “ADU/VDU-RegInput-SampleDB.csv”和 “ADU/VDU-RegInput-SampleDB.h5”文件
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
+		  collapsed:: true
 		  对详细模拟结果进行样本清洗以及和现场数据分布做对比
 			- 对详细模拟结果进行样本清洗以及和现场数据分布做对比
 			- [[$red]]==统计详细模拟样本情况，可以看出样本的收敛情况，最后一步的样本数、达到目标值的样本数、继续运行的样本数，以及它们在收敛样本中的占比、在总投入样本中的占比，还会看到样本的步数统计。这些都帮助更好的了解这批样本结果，并对设置有一定的理解==
@@ -147,5 +163,7 @@
 			- 与现场数据进行可视化分析
 			- 保存清洗后的详细样本结果 会在 D:\XXXX\05-OutputData\（config 表格中 value 值）\Data 目录下自动生成 “A/VDU-RegCleanRes-SampleDB.h5”
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
+		  collapsed:: true
+		  对详细模拟结果进行样本清洗以及和现场数据分布做对比
 			-
 -
