@@ -116,7 +116,9 @@
 						  2.小步长会导致样本调整的步数较多，采样时间过长，需要配合 03-7.2  Use  Google  OR-Tools  to  solve  a  TSP  likely problem:  Minimising  the  total  simulation  steps  by  choosing  simulation pathway，减小每批样本的调整步数，节省采样时间。
 						- onestepcondition  级别要优先于 maxchange，“+”表示如果从当前值到目标值是增加的话，就一步调整到位，而不是采用分步调整，如果是“-”，表示如果从当前值到目标值是降低的话，就一步调整到位。一般是选取设置易于收敛的方向。如侧线流量如果降低，则设置一步到位，进塔温度提高则设置一步到位。
 						  🔍目标值
-						- rollback 表示如果出现不收敛，是否要采用 robllback 的方式，“1”表示采用，也就是会返回到上一步收敛的结果，并且这个参数在下一步将不会再调整，“0”表示不采用。
+						- rollback 表示如果出现不收敛，是否要采用 robllback 的方式，“1”表示采用，也就是会返回到上一步收敛的结果，并且这个参数在下一步将不会再调整，“0”表示不采用
+						- minitoroutput:表示需要监测模拟文件中的结果，减压采样对应 Output3表格中的单元格，对于常压采样，由于存在两个输出 spreadsheet，需要增加 Outputs1 和 Outputs2，例如 Outputs1-C325。 如果当前模拟值低于了 lbthreshod 值，或者是高于了 ubthreshod，下一步则停止对这个参数的调整。 
+						  🔍minitoroutput 的优先级要高于 onestepcondition
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		-
