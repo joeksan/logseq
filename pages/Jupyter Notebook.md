@@ -56,7 +56,7 @@
 		- config[[配置表]]
 			- mapping+描述
 - ## 04-VDU Operating Condition Sampling
-	- ### Distop {{renderer :tocgen2}}
+	- ### Distop
 	  collapsed:: true
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
 			- 对[[独立变量]]进行LHS采样
