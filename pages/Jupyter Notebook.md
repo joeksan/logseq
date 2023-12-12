@@ -55,13 +55,14 @@
 		- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
 			- 对[[独立变量]]进行LHS采样
 				- 配置上下限——变化范围
-			- 第一次调用[[GAMS]]
+			- 第一次调用[[GAMS]]模型
 				- 针对由[[独立变量]]计算得到的[[中间变量]]
 				- 约束条件——[[中间变量]]的变化范围
 				  用来最小化样本误差
 				- 有且只有一个方程可以不用完全满足，在relax列配置为1
 			- 生成第一次distop样本运行input，存成h5文件（或csv文件）
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
+			- 线性系数和
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
