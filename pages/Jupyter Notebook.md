@@ -61,7 +61,7 @@
 				- 约束条件——[[中间变量]]的变化范围
 				  🔍用来最小化样本误差
 				- 有且只有一个方程可以不用完全满足，在relax列配置为1
-			- 生成第一次distop样本运行input，存成h5文件（或csv文件）
+			- 生成第一次distop样本运行input数据，存成h5文件（或csv文件）
 		- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
 			- 首先改造普通样本
 				- 读取超过约束条件上下限的样本
@@ -77,6 +77,7 @@
 				  🔍标准差stddev可以不用指定，用来做scaling，由notebook模块计算
 			- 第二次投入样本运行平台的样本为01改造过的样本集，input数据存为h5文件
 		- **02-SimplifiedModel-Sampling Visualisation and CleaningV02h5.ipynb**
+			-
 	- ### rigorous
 		- **03-RigSimulation-Operating Condition SamplingV02.ipynb**
 		- **04-RigSimulation-Sampling Visualisation and CleaningV02[[$red]]==0728a==.ipynb**
