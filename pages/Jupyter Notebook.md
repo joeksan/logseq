@@ -167,5 +167,7 @@
 		- **05-Combine Sample DB and Visualisation[[$red]]==V020806abcd==.ipynb**
 		  对多个详细模拟清洗后的样本库提取关键变量后进行合并，且和现场数据进行可视化分析
 			- 检 索 所 有 的 版 本 信 息 ， 这 里 默 认 检 索 对 应 版 本 目 录 下 的 ADU 、VDU-RegCleanRes-SampleDB*.h5 文件
+			- 根据配置文件中的“DBVar”，来提取的关键变量 ID 及描述信息。
+			- 读取所有严格模拟样本清洗后的 h5 文件中的关键变量并进行合并。
 			-
 -
