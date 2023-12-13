@@ -416,5 +416,4 @@
  :editor/preferred-pasting-file? true
  :publishing/all-pages-public? true
  :ui/show-brackets? false
- :journal/page-title-format "yyyyMMdd"
- :zotero/settings-v2 {"default" {:zotero-linked-attachment-base-directory "C:\\Users\\Default\\Documents"}}}
+ :journal/page-title-format "yyyyMMdd"}
