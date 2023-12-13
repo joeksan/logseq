@@ -45,7 +45,7 @@
 			  每种原油有5~10个ADU[[$red]]==重复==样本——相同same/相似close
 			  VDU与ADU方法相似
 			  移除相似样本后，获得目标数量级常渣样本
-			  开发了一种基于加权欧氏距离来去除重复样本的方法
+			  开发了一种基于[[$red]]==加权欧氏距离==来去除重复样本的方法🔍[[标准化]]
 			  所选属性包括31点TBP曲线点及API、流量等
 			- 1.删除相似常渣样本数据
 				- 改变fdistcriteria[distance criteria parameter]距离标准参数\rightarrow决定移除样本数量\rightarrow获取特定样本数
