@@ -11,6 +11,7 @@
 	- Jupyter在工作汇报和教学方面也是非常的优秀。由于Jupyter本身的模块化和内容的清晰化，使得其天生具有如PPT一般的展示工作成果的功能。
 	- 由于Jupyter中可以将输出结果嵌套在Notebook中，并且支持Markdown语句的操作，这样使得你可以在Jupyter中输入任何你需要展示的内容，并且这些内容都会以一种[[#blue]]^^有组织有层次^^的样子排列出来。
 - # VDUSampling_QILU
+  id:: 657919be-8286-49de-8c81-b6b0d2027443
 	- ## 01-ADU Feed Sampling
 		- **00-Generate Crude Property Based on Configuration.ipynb**
 			- config [[配置表]]
