@@ -52,6 +52,8 @@
 			- 2.比较删除前后分布变化
 			- config[[配置表]]
 				- mapping+描述
+				- feature ID由ADU_var \rightarrow VDU_var
+					-
 	- ## 04-VDU Operating Condition Sampling
 		- ### Distop
 			- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
