@@ -53,7 +53,9 @@
 			- config[[配置表]]
 				- mapping+描述
 				- feature ID由ADU_var \rightarrow VDU_var
-					-
+					- ![image.png](../assets/image_1702863843929_0.png)
+					  🔍这里要注意ADU_var要和常压给到的采样结果h5文件中保持一致
+					  🔍weight列
 	- ## 04-VDU Operating Condition Sampling
 		- ### Distop
 			- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
