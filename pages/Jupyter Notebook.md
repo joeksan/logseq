@@ -16,12 +16,13 @@
 		- **00-Generate Crude Property Based on Configuration.ipynb**
 			- config [[配置表]]
 			  id:: 6576b390-9fbf-4294-b228-b1f18a2c12f3
-				- notebook中的设置要和自己的配置表名称及路径一致
-				  版本名\rightarrow在outputdata中生成不同文件夹
+				- 🔍notebook中szconfigfile的设置要和自己的配置表名称及路径一致
+				  🔍版本名\rightarrow在outputdata中生成不同文件夹
 					- ![image.png](../assets/image_1702278774401_0.png)
 					  ![image.png](../assets/image_1702865196271_0.png)
-					- VDUFeed中的_com‘用于样本运行时定位模型中常渣的虚拟组分
-				-
+				- 🔍VDUFeed中的‘_com’用于样本运行时定位模型中常渣的虚拟组分
+				- IndepVar
+					- 减压塔顶温度与
 			- crude propert 原油属性
 				- refinery 样本
 					- TBP curves
