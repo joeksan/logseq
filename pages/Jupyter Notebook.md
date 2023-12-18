@@ -55,7 +55,6 @@
 	- ## 04-VDU Operating Condition Sampling
 		- ### Distop
 			- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
-			  collapsed:: true
 			  打开Distop 自动采样和样本改造文件
 				- 对[[独立变量]]进行LHS采样
 				  collapsed:: true
@@ -69,7 +68,6 @@
 					- 有且只有一个方程可以不用完全满足，在relax列配置为1
 				- 生成第一次distop样本运行input数据，存成h5文件（或csv文件）
 			- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
-			  collapsed:: true
 			  对 Distop 样本结果进行改造和可视化
 				- 首先改造普通样本
 				  collapsed:: true
