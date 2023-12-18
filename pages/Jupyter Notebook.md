@@ -54,7 +54,7 @@
 				- mapping+描述
 				- feature ID由ADU_var \rightarrow VDU_var
 					- ![image.png](../assets/image_1702863843929_0.png)
-					  🔍这里要注意ADU_var要和常压给到的采样结果h5文件中保持一致
+					  🔍这里要注意ADU_var要和常压给到的采样结果h5文件中保持一致（包括feature ID和变量总数）
 					  🔍weight列表示计算距离时移除相似样本的权重——移除率由标准距离参数控制，移除后的分布则由设置的权重影响——尽量选择符合常渣特征且差异性不大的变量，如常渣流量+31个TBP点的组合，可以有效增加样本多样性
 	- ## 04-VDU Operating Condition Sampling
 		- ### Distop
