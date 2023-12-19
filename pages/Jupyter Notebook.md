@@ -16,8 +16,10 @@
 		- **00-Generate Crude Property Based on Configuration.ipynb**
 			- config [[配置表]]
 			  id:: 6576b390-9fbf-4294-b228-b1f18a2c12f3
-				- 版本名\rightarrow在outputdata中生成不同文件夹
+				- 🔍notebook中szconfigfile的设置要和自己的配置表名称及路径一致
+				  🔍版本名\rightarrow在outputdata中生成不同文件夹
 					- ![image.png](../assets/image_1702278774401_0.png)
+					  ![image.png](../assets/image_1702865196271_0.png)
 			- crude propert 原油属性
 				- refinery 样本
 					- TBP curves
@@ -52,24 +54,42 @@
 			- 2.比较删除前后分布变化
 			- config[[配置表]]
 				- mapping+描述
+				- feature ID由ADU_var \rightarrow VDU_var
+					- ![image.png](../assets/image_1702863843929_0.png)
+					  🔍这里要注意ADU_var要和常压给到的采样结果h5文件中保持一致（包括feature ID和变量总数）
+					  🔍weight列表示计算距离时移除相似样本的权重——移除率由标准距离参数控制，移除后的分布则由设置的权重影响——尽量选择符合常渣特征且差异性不大的变量，如常渣流量+31个TBP点的组合，可以有效增加样本多样性
 	- ## 04-VDU Operating Condition Sampling
 		- ### Distop
 			- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
-			  collapsed:: true
-			  打开Distop 自动采样和样本改造文件
-				- 对[[独立变量]]进行LHS采样
-				  collapsed:: true
-					- 配置上下限——变化范围
+			  Distop 自动采样和样本改造
+				- config[[配置表]]
+					- VDUFeed
+						- 🔍VDUFeed中的‘_com’用于样本运行时定位模型中常渣的虚拟组分
+					- IndepVar
+					  对[[独立变量]]进行LHS采样
+						- 配置上下限——变化范围
+							- 减压塔顶温度与减顶循返塔温度关联，调整两者差值以吻合现场的减顶温度分布
+							  同样用来关联计算的虚拟仪表还有“减顶循抽出_质量流量/常渣塔底抽出_质量流量”
+							- 常渣进料温度、塔顶压力、减顶循返塔温度、中段取热比例、减一中温差、减二中温差、减压塔塔底温度、侧线/塔底汽提分率上下限设置参考现场数据
+							- 提馏段两个分流器的分流率用来调整减渣轻组分和雾沫夹带的重组分，范围参考齐鲁
+							  精馏段/进料阀/转油线压降、过气化率参考齐鲁
+							- 🔍调整切割点中位数以吻合现场收率的分布，范围可以放宽一些
+						- DistopInteVar
+							- 上下限可以由独立变量计算得到，也可以规定上下限，利用GAMS对超出约束范围的样本进行改造
+							- 🔍中段负荷与气化段变量的回归关系式由distop采样结果回归，原因是满足机理模型的数据分布更具有普适性；如果是由现场历史数据回归得到的关系式则存在局限性，变化范围较窄，与常减压装置运行特点——偏好操作空间有关
+						- DistopInput
+							- 🔍与模型中Inputs表对应，注意减压样本扩充时“常渣分流进减压炉_质量流量”尽可能上限外扩，补充一些现场常压拔出率不够高，减压负荷大的情况
+						- DistopInputView
+							- 🔍需要做可视化参数的可以添加到这里，也可以结合后续需要对一些关键的参数如“进料温度”进行计算值预测，会在notebook的00中生成散点图
 				- 第一次调用[[GAMS]]模型
-				  collapsed:: true
 					- 读取超过约束条件上下限的样本
 					- 针对由[[独立变量]]计算得到的[[中间变量]]
 					- 约束条件——[[中间变量]]的变化范围
 					  🔍用来最小化样本误差
 					- 有且只有一个方程可以不用完全满足，在relax列配置为1
+					- 🔍理解模型中目标函数对于自变量是最小化变化量的平方和， 对于“DistopInteVar”的中间变量，最小化和目标数值的差距，所以权重设置越小，改造前后结果变化越明显
 				- 生成第一次distop样本运行input数据，存成h5文件（或csv文件）
 			- **01-SimplifiedModel-Sample ModificationV02h5.ipynb**
-			  collapsed:: true
 			  对 Distop 样本结果进行改造和可视化
 				- 首先改造普通样本
 				  collapsed:: true
