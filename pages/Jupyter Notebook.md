@@ -28,6 +28,7 @@
 				  🔍版本名\rightarrow在outputdata中生成不同文件夹
 					- ![image.png](../assets/image_1702278774401_0.png)
 					  ![image.png](../assets/image_1702865196271_0.png)
+						- assets:///D%3A/git454pro/scienco/logseq/assets/image_1702865196271_0.png
 			- crude propert 原油属性
 			  collapsed:: true
 				- refinery 样本
@@ -74,7 +75,7 @@
 			- config[[配置表]]
 				- mapping+描述
 				- feature ID由ADU_var \rightarrow VDU_var
-					- ![image.png](../assets/image_1702863843929_0.png)
+					- ![image.png](../assets/image_1702863843929_0.png){:height 388, :width 422}
 					  🔍这里要注意ADU_var要和常压给到的采样结果h5文件中保持一致（注意检查每个变量的feature ID）
 					  🔍weight列表示计算距离时移除相似样本的权重——移除率由标准距离参数控制，移除后的分布则由设置的权重影响——尽量选择符合常渣**特征**且差异性不大的变量，如常渣流量+31个TBP点的组合，可以有效增加样本多样性
 	- ## 04-VDU Operating Condition Sampling
