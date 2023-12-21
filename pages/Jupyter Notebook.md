@@ -176,7 +176,7 @@
 							- cmaxchange：为进一步调整的步长。
 							- cminitoroutput、clbthreshold、cubthreshold 进一步调整的监控变量及范围。
 							- Cbbegin 如果填 1，继续运行时一步到最近的上限或者下限，也就是一步跳到范围边界，再在范围内根据步长调整； 如果为空值或者 0，则按照步长一步步调整
-					- Sequencing 表格：主要用于对 RegInput 的变量进行聚类相关的配置——减压样本考虑的变量包括进料量，压降，进料 API 性质，[[$red]]==J2+J4 收率==；
+					- Sequencing 表格：主要用于对 RegInput 的变量进行聚类相关的配置——减压样本考虑的变量包括进料量，压降，进料 API 性质，[[$red]]==J2+J4 收率==，板效等；
 					  🔍聚类数值最好填大一些，每一各 Group 最好不要超过 200 个 case（100个左右），这样运行过程中可以节约时间
 					- RegOutput 表格：此表格和详细模拟中的 Ouputs3 对应，不过配置了变量的上下限，现场 Tag 配置等，上下限用于清洗数据使用,现场位号主要是为了和现场数据分布做对比
 				- 读取 Distop 清洗后的样本数据 VDU-RegCleanRes-SampleDB
