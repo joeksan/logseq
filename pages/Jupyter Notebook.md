@@ -49,10 +49,12 @@
 				- formula
 				- 样本数量
 		- **01-Crude Sampling.ipynb**
-		  进料采样
 	- ## 02-ADU Operating Condition Sampling
-		- 常压采样结束后会将常渣及原油比例等相关信息传递给减压，因此要交接好对应的工作， 因为我们是前一个分割关联[[子系统]][[有序采样]]
+	  常压操作条件采样
+		- 常压采样结束后会将常渣及原油比例等相关信息传递给减压进料采样，因此要交接好对应的工作
+		  前一个分割关联[[子系统]]的输出会作为下一个[[子系统]]的输入，即[[有序采样]]
 	- ## 03-VDU Feed Sampling
+	  减压进料采样
 		- **00-DataProcessing.ipynb**
 			- objective:
 			  抽样方法提取常渣进料样本
@@ -73,6 +75,7 @@
 					  🔍这里要注意ADU_var要和常压给到的采样结果h5文件中保持一致（包括feature ID和变量总数）
 					  🔍weight列表示计算距离时移除相似样本的权重——移除率由标准距离参数控制，移除后的分布则由设置的权重影响——尽量选择符合常渣特征且差异性不大的变量，如常渣流量+31个TBP点的组合，可以有效增加样本多样性
 	- ## 04-VDU Operating Condition Sampling
+	  减压操作条件采样
 		- ### Distop
 			- **00-SimplifiedModel-Operating Condition SamplingV02.ipynb**
 			  Distop 自动采样和样本改造
