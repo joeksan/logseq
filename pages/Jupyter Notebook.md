@@ -1,21 +1,24 @@
-## 使用感受
-background-color:: yellow
-- **把复杂的工作流程用自动化的、不易出错的脚本来代替**
-	- 集成环境
-	- 直接看结果
-- **Jupyter Notebook将Python的交互式特点发挥到了极致**
-	- [[#green]]^^分析和建模^^是非常#碎片化 的工作，而每一块的碎片又有着非常强的独立性，甚至可以说除了数据本身之外，每一块的代码之间并没有很强的关联性。
-	- [[#green]]^^数据分析和处理^^的过程往往是一个不断试验的过程，我们需要一次又一次的改变预处理的方式、尝试不同的特征工程处理、一遍又一遍的调整着模型参数等等等等。
-	- 每一部分的工作都需要反复试验反复修改，而下一模块需要用到的只不过是上一模块输出的数据。
-	- *在Jupyter当中，我们可以每写几行或者每完成一个小的模块便运行一次；通过Jupyter，我们可以最快的得知自己做出的调整是好还是坏，并尽快进入到下一次的试验当中。*
-	  background-color:: blue
-- **Jupyter Notebook更利于汇报和教学**
-	- Jupyter在工作汇报和教学方面也是非常的优秀。由于Jupyter本身的模块化和内容的清晰化，使得其天生具有如PPT一般的展示工作成果的功能。
-	- 由于Jupyter中可以将输出结果嵌套在Notebook中，并且支持Markdown语句的操作，这样使得你可以在Jupyter中输入任何你需要展示的内容，并且这些内容都会以一种[[#blue]]^^有组织有层次^^的样子排列出来。
-- # VDUSampling_QILU
+# 使用感受
+	- **把复杂的工作流程用自动化的、不易出错的脚本来代替**
+	  collapsed:: true
+		- 集成环境
+		- 直接看结果
+	- **Jupyter Notebook将Python的交互式特点发挥到了极致**
+	  collapsed:: true
+		- [[#green]]^^分析和建模^^是非常#碎片化 的工作，而每一块的碎片又有着非常强的独立性，甚至可以说除了数据本身之外，每一块的代码之间并没有很强的关联性。
+		- [[#green]]^^数据分析和处理^^的过程往往是一个不断试验的过程，我们需要一次又一次的改变预处理的方式、尝试不同的特征工程处理、一遍又一遍的调整着模型参数等等等等。
+		- 每一部分的工作都需要反复试验反复修改，而下一模块需要用到的只不过是上一模块输出的数据。
+		- *在Jupyter当中，我们可以每写几行或者每完成一个小的模块便运行一次；通过Jupyter，我们可以最快的得知自己做出的调整是好还是坏，并尽快进入到下一次的试验当中。*
+		  background-color:: blue
+	- **Jupyter Notebook更利于汇报和教学**
+	  collapsed:: true
+		- Jupyter在工作汇报和教学方面也是非常的优秀。由于Jupyter本身的模块化和内容的清晰化，使得其天生具有如PPT一般的展示工作成果的功能。
+		- 由于Jupyter中可以将输出结果嵌套在Notebook中，并且支持Markdown语句的操作，这样使得你可以在Jupyter中输入任何你需要展示的内容，并且这些内容都会以一种[[#blue]]^^有组织有层次^^的样子排列出来。
+- # VDUSampling_JINAN
   id:: 657919be-8286-49de-8c81-b6b0d2027443
 	- ## 01-ADU Feed Sampling
 		- **00-Generate Crude Property Based on Configuration.ipynb**
+		  以原油为例，通用的相关配置
 			- config [[配置表]]
 			  id:: 6576b390-9fbf-4294-b228-b1f18a2c12f3
 				- 🔍notebook中szconfigfile的设置要和自己的配置表名称及路径一致
@@ -23,17 +26,21 @@ background-color:: yellow
 					- ![image.png](../assets/image_1702278774401_0.png)
 					  ![image.png](../assets/image_1702865196271_0.png)
 			- crude propert 原油属性
+			  collapsed:: true
 				- refinery 样本
 					- TBP curves
 					- tag \leftrightarrow variable name
 			- TBP conversion 定温累计收率
+			  collapsed:: true
 				- 混合规则
 				- 基于收率\rightarrow基于温度
 				- 非线性采样\rightarrow线性采样
 			- cut point 理想收率
+			  collapsed:: true
 				- 理想馏分，连续切割
 				- 估算现场切割点
 			- sampling target property
+			  collapsed:: true
 				- Tag
 				- varlist
 				- Relaxcoef
