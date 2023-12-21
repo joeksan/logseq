@@ -16,9 +16,11 @@
 		- 由于Jupyter中可以将输出结果嵌套在Notebook中，并且支持Markdown语句的操作，这样使得你可以在Jupyter中输入任何你需要展示的内容，并且这些内容都会以一种[[#blue]]^^有组织有层次^^的样子排列出来。
 - # VDUSampling_JINAN
   id:: 657919be-8286-49de-8c81-b6b0d2027443
+	- ## 00-SharedLib
+	  相关的py文件
 	- ## 01-ADU Feed Sampling
 		- **00-Generate Crude Property Based on Configuration.ipynb**
-		  以原油为例，通用的相关配置
+		  以原油采样为例，展示通用的相关配置
 			- config [[配置表]]
 			  id:: 6576b390-9fbf-4294-b228-b1f18a2c12f3
 				- 🔍notebook中szconfigfile的设置要和自己的配置表名称及路径一致
@@ -47,6 +49,8 @@
 				- formula
 				- 样本数量
 		- **01-Crude Sampling.ipynb**
+	- ## 02-ADU Operating Condition Sampling
+		- 常压采样结束后会
 	- ## 03-VDU Feed Sampling
 		- **00-DataProcessing.ipynb**
 			- objective:
