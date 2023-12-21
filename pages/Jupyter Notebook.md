@@ -19,6 +19,7 @@
 	- ## 00-SharedLib
 	  相关的py文件会存放在这个文件夹下
 	- ## 01-ADU Feed Sampling
+	  常压进料采样
 		- **00-Generate Crude Property Based on Configuration.ipynb**
 		  以原油采样为例，展示通用的相关配置
 			- config [[配置表]]
@@ -56,14 +57,15 @@
 	- ## 03-VDU Feed Sampling
 	  减压进料采样
 		- **00-DataProcessing.ipynb**
-			- objective:
-			  抽样方法提取常渣进料样本
-			  收率分布覆盖且吻合现场数据
-			- basic principles：
+			- objective（目标）:
+			  采用抽样方法提取常渣进料样本
+			  收率分布覆盖且吻合现场数据分布
+			- basic principles（基本原理）：
 			  每种原油有5~10个ADU[[$red]]==重复==样本——相同same/相似close
 			  VDU与ADU方法相似
 			  移除相似样本后，获得目标数量级常渣样本
-			  开发了一种基于[[$red]]==加权欧氏距离==来去除重复样本的方法🔍[[标准化]]
+			  开发了一种基于[[$red]]==加权欧氏距离==来去除重复样本的方法
+			  🔍标准距离参数确保数据都具有相似的统计特性。这有助于让模型更容易训练
 			  所选属性包括31点TBP曲线点及API、流量等
 			- 1.删除相似常渣样本数据
 				- 改变fdistcriteria[distance criteria parameter]距离标准参数\rightarrow决定移除样本数量\rightarrow获取特定样本数
