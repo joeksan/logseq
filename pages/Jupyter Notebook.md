@@ -17,7 +17,7 @@
 - # VDUSampling_JINAN
   id:: 657919be-8286-49de-8c81-b6b0d2027443
 	- ## 00-SharedLib
-	  相关的py文件
+	  相关的py文件会存放在这个文件夹下
 	- ## 01-ADU Feed Sampling
 		- **00-Generate Crude Property Based on Configuration.ipynb**
 		  以原油采样为例，展示通用的相关配置
@@ -49,8 +49,9 @@
 				- formula
 				- 样本数量
 		- **01-Crude Sampling.ipynb**
+		  进料采样
 	- ## 02-ADU Operating Condition Sampling
-		- 常压采样结束后会
+		- 常压采样结束后会将常渣及原油比例等相关信息传递给减压，因此要交接好对应的工作， 因为我们是前一个分割关联[[子系统]][[有序采样]]
 	- ## 03-VDU Feed Sampling
 		- **00-DataProcessing.ipynb**
 			- objective:
