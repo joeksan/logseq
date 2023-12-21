@@ -57,10 +57,10 @@
 	- ## 03-VDU Feed Sampling
 	  减压进料采样
 		- **00-DataProcessing.ipynb**
-			- **objective（目标**）:
+			- **objective（目标）:**
 			  采用抽样方法提取常渣进料样本
 			  收率分布覆盖且吻合现场数据分布
-			- basic principles（基本原理）：
+			- **basic principles（基本原理）：**
 			  每种原油有5~10个ADU[[$red]]==重复==样本——相同same/相似close
 			  VDU与ADU方法相似
 			  移除相似样本后，获得目标数量级常渣样本
@@ -73,8 +73,8 @@
 				- mapping+描述
 				- feature ID由ADU_var \rightarrow VDU_var
 					- ![image.png](../assets/image_1702863843929_0.png)
-					  🔍这里要注意ADU_var要和常压给到的采样结果h5文件中保持一致（包括feature ID和变量总数）
-					  🔍weight列表示计算距离时移除相似样本的权重——移除率由标准距离参数控制，移除后的分布则由设置的权重影响——尽量选择符合常渣特征且差异性不大的变量，如常渣流量+31个TBP点的组合，可以有效增加样本多样性
+					  🔍这里要注意ADU_var要和常压给到的采样结果h5文件中保持一致（注意检查每个变量的feature ID）
+					  🔍weight列表示计算距离时移除相似样本的权重——移除率由标准距离参数控制，移除后的分布则由设置的权重影响——尽量选择符合常渣**特征**且差异性不大的变量，如常渣流量+31个TBP点的组合，可以有效增加样本多样性
 	- ## 04-VDU Operating Condition Sampling
 	  减压操作条件采样
 		- ### Distop
