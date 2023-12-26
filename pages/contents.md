@@ -6,3 +6,4 @@
 	- {{renderer :tocgen2, [[成果]], calc(100vh - 135px)}}
 - {{renderer :tocgen,*}}
   query-table:: false
+- {{renderer :tocgen2, [[流程模拟]], calc(100vh - 135px)}}
