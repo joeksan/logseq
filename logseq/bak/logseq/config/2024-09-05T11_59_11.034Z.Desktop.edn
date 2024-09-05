@@ -10,7 +10,7 @@
  ;; Available options:
  ;; - :now for NOW/LATER style (default)
  ;; - :todo for TODO/DOING style
- :preferred-workflow :now
+ :preferred-workflow :todo
 
  ;; Exclude directories/files.
  ;; Example usage:
@@ -46,7 +46,7 @@
 
  ;; Display all lines of a block when referencing ((block)).
  ;; Default value: false
- :ui/show-full-blocks? false
+ :ui/show-full-blocks? true
 
  ;; Automatically expand block references when zooming in.
  ;; Default value: true
@@ -412,4 +412,10 @@
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :editor/logical-outdenting? true}
+ :editor/logical-outdenting? true
+ :editor/preferred-pasting-file? true
+ :publishing/all-pages-public? true
+ :ui/show-brackets? false
+ :journal/page-title-format "yyyyMMdd"
+ :zotero/settings-v2 {"default" {:zotero-linked-attachment-base-directory "C:\\Users\\Default\\Documents", :type-id "11618477", :zotero-data-directory "D:\\zotero\\Zotero file", :notes-block-text "[[Notes]]", :attachments-block-text "[[Attachments]]", :overwrite-mode? true}
+ "test" {}}}
