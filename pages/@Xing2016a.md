@@ -1,0 +1,17 @@
+tags:: [[advanced oxidation processes]], [[chemical oxidation demand]], [[degradation]], [[rotating packed bed]], [[化学需氧量]], [[旋转填充床]], [[酸性黄23]], [[降解 acid yellow 23]], [[高级氧化]]
+date:: 2016
+university:: 北京化工大学
+title:: @Xing2016a
+item-type:: [[thesis]]
+original-title:: 超重力环境下利用高级氧化技术处理酸性黄23印染废水的研究
+language:: 中文;
+thesis-type:: 硕士
+url:: https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201701&filename=1016322100.nh&v=
+authors:: [[邢天辰]]
+library-catalog:: CNKI
+links:: [Local library](zotero://select/library/items/JXN7DL3J), [Web library](https://www.zotero.org/users/11618477/items/JXN7DL3J)
+
+- [[Abstract]]
+	- 印染工业是我国重要的传统产业,在印染过程中,不同的无机盐常被用做促染剂或缓染剂,因此印染废水的成分复杂、种类和变化较多,是一种处理困难、降解不易的工业废水。随着化纤工业的发展和纺织染整技术的进步,利用传统方法处理印染废水已无法达到排放的要求,因而人们不断提出更有效的处理工艺。其中高级氧化工艺(AOPs)具有高效和无二次污染等特点,使其在印染废水处理领域有着良好的应用前景和空间。AOPs主要包括03法、O3/Fenton法、03/UV法等氧化工艺。臭氧AOPs能够方便地产生具有氧化性很强的自由基,以羟基自由基为主要代表。氧化能力强的自由基会与存在于水中的有机物质进行反应,将有机污染物氧化为小分子无毒物质,甚至彻底矿化,从而高效的且对环境无污染的处理印染废水。臭氧AOPs应用中的关键问题是臭氧的气液传质效率,因此本论文提出将超重力技术与臭氧AOPs相结合,利用超重力技术高度强化气液两相传质的特点来促进臭氧的吸收,从而提高印染废水的处理效果。本论文利用超重力设备-旋转填充床(I冲B)强化臭氧AOPs,探究了03体系和O3/Fenton体系下工艺条件对处理酸性黄23印染废水的影响规律,确定了适宜的操作条件；考察了无机盐的加入对臭氧AOPs处理酸性黄23印染废水的影响规律,并探索了臭氧氧化酸性黄23的机理。主要成果如下：1、研究了不同工艺条件对RPB中O3和03/Fenton体系对处理酸性黄23印染废水的影响规律。03体系下,随着RPB转速、废水初始pH、通入O3浓度的由小到大升高,酸性黄23废水脱色率以及COD去除率先上升后趋于平缓；随着废水流量的不断增大,酸性黄23废水脱色率以及COD去除率不断下降；而随温度的增加变化不大。O3/Fenton体系下,随着Fe2+浓度、RPB转速、废水初始pH的增大,酸性黄23废水脱色率以及COD去除率先上升后有所下降；溶液脱色率以及COD去除率随H202浓度、通入臭氧浓度的增大而先增大后趋于平缓。2、O3/Fenton体系下NaCl、KH2PO4浓度增加,对酸性黄23废水脱色率、COD去除率及废水的可生化性造成不利的影响；随Na2SO4浓度的增加,对酸性黄23废水脱色率、COD去除率先下降后保持不变,Na2SO4浓度增大对废水的可生化性无影响；NaNO3浓度的变化对酸性黄23废水脱色率、COD去除率及处理后废水的可生化性基本无影响。而03体系下无机盐的加入与否对处理酸性黄23印染废水基本无影响。3、采用紫外-可见光谱对酸性黄23发色基团偶氮键(-N=N-)是否断裂进行研究,并通过液相色谱-质谱联用仪对RPB中臭氧氧化后的酸性黄23废水进行分析,检测到了氧化过程中的产物,根据得到的氧化过程中的产物及氧化机理推断出了酸性黄23可能的氧化降解路径。
+- [[Attachments]]
+	- [xingtianchen2016_超重力环境下利用高级.pdf](zotero://select/library/items/GGGH5N3B) {{zotero-linked-file "E:\\黄若晨的知识体系\\logseqNote\\undefined\\xingtianchen2016_超重力环境下利用高级.pdf"}}
